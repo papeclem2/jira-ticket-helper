@@ -53,19 +53,6 @@ A simple and customizable Chrome extension to help you create JIRA tickets quick
    - Enter the ticket title and description (you can use shortcuts like `:bug:`, `:check:`, `:fire:`, etc.).
    - Click **Create Ticket**. The extension will automatically create a task in JIRA and open the ticket in a new tab.
 
----
-
-## Usage
-
-1. **Configure JIRA Settings**:
-   - In the extension options, enter your JIRA URL and API token.
-   - Save the settings, and you will be redirected to the main page of the extension.
-   
-2. **Create JIRA Ticket**:
-   - Select your JIRA project from the dropdown (the list is automatically fetched from your JIRA instance).
-   - Enter the ticket title and description (you can use shortcuts like `:bug:`, `:check:`, `:fire:`, etc.).
-   - Click **Create Ticket**. The extension will automatically create a task in JIRA and open the ticket in a new tab.
-
 ![Screenshot of the JIRA Ticket Helper](./assets/screenshot.png)
 
 ---
