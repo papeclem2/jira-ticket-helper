@@ -1,24 +1,26 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
-![GitHub issues](https://img.shields.io/github/issues/papeclem2/chrome-extension-template)
+![GitHub issues](https://img.shields.io/github/issues/papeclem2/jira-ticket-helper)
 
-# Chrome Extension Template
+# JIRA Ticket Helper
 
-A simple and customizable template to quickly build Google Chrome extensions. This project provides the necessary structure to create and develop Chrome extensions efficiently, offering a flexible starting point for both beginners and experienced developers.
+A simple and customizable Chrome extension to help you create JIRA tickets quickly with predefined templates. The extension allows users to select a JIRA project, enter ticket details, and automatically generate tasks in JIRA, complete with icon support for common JIRA elements.
 
 ---
 
 ## Features
 
-- **Basic project structure** for Chrome extensions.
-- **Popup with customizable UI** for your extension.
-- **Background and content scripts** to manage background processes and page interactions.
-- **Easy setup** for rapid development and testing.
+- **JIRA project selection**: Automatically populates and remembers the last selected project.
+- **Icon support in descriptions**: Use shortcuts like `:bug:` or `:check:` to automatically convert text into icons or emojis in the ticket descriptions.
+- **Saves JIRA credentials**: Save and retrieve JIRA URL and API tokens securely using Chrome storage.
+- **Default description template**: Pre-populates ticket descriptions with a configurable default template.
+- **Task creation in JIRA**: Automatically creates JIRA tasks using the JIRA API and redirects you to the newly created ticket.
 
 ---
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) must be installed on your system.
+- **JIRA account**: You will need your JIRA API token and the URL of your JIRA instance.
+- **Node.js**: Must be installed on your system for development purposes.
 
 ---
 
@@ -26,8 +28,8 @@ A simple and customizable template to quickly build Google Chrome extensions. Th
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/papeclem2/chrome-extension-template.git
-   cd chrome-extension-template
+   git clone https://github.com/papeclem2/jira-ticket-helper.git
+   cd jira-ticket-helper
 
 2. **Install dependencies**:
    ```bash
@@ -36,14 +38,35 @@ A simple and customizable template to quickly build Google Chrome extensions. Th
 3. **Load the extension in Chrome**:
    - Open Chrome and navigate to `chrome://extensions/`.
    - Enable **Developer mode** (toggle in the top-right corner).
-   - Click on **Load unpacked** and select the `chrome-extension-template` folder.
+   - Click on **Load unpacked** and select the `jira-ticket-helper` folder.
 
 ---
 
 ## Usage
 
-- Once the extension is loaded, click on the extension icon in the Chrome toolbar to open the popup.
-- You can modify the popup UI and extend the content or background scripts according to your needs.
+1. **Configure JIRA Settings**:
+   - In the extension options, enter your JIRA URL and API token.
+   - Save the settings, and you will be redirected to the main page of the extension.
+   
+2. **Create JIRA Ticket**:
+   - Select your JIRA project from the dropdown (the list is automatically fetched from your JIRA instance).
+   - Enter the ticket title and description (you can use shortcuts like `:bug:`, `:check:`, `:fire:`, etc.).
+   - Click **Create Ticket**. The extension will automatically create a task in JIRA and open the ticket in a new tab.
+
+---
+
+## Usage
+
+1. **Configure JIRA Settings**:
+   - In the extension options, enter your JIRA URL and API token.
+   - Save the settings, and you will be redirected to the main page of the extension.
+   
+2. **Create JIRA Ticket**:
+   - Select your JIRA project from the dropdown (the list is automatically fetched from your JIRA instance).
+   - Enter the ticket title and description (you can use shortcuts like `:bug:`, `:check:`, `:fire:`, etc.).
+   - Click **Create Ticket**. The extension will automatically create a task in JIRA and open the ticket in a new tab.
+
+![Screenshot of the JIRA Ticket Helper](./assets/screenshot.png)
 
 ---
 

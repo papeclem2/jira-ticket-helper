@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Popup</title>
-  <style>
-    body {
-      width: 200px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
+  <title>JIRA Ticket Helper</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <button id="changeColor">Change Color</button>
+  <div class="container">
+    <h2>Create JIRA Ticket</h2>
+
+    <label for="project">Project:</label>
+    <select id="project"></select>
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title">
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+
+    <button id="createTicket">Create Ticket</button>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
